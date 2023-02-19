@@ -84,7 +84,7 @@ class SlashCommander(object):
 			current_cmd = next(
 				(
 					c for c in current_cmd["options"]
-					if c["name"] == cmd and c["type"] in (1, 2)
+					if c["name"] == cmd and c["type"] in (1, 2, 3)
 				),
 				None
 			)
